@@ -1,0 +1,14 @@
+﻿@page "/persona/nuevo"
+@inject NavigationManager navigationManager
+
+<h3>FormPersonaPage</h3>
+<div class="text-center">
+    <button class="btn btn-danger" @onclick="regresar">regresar</button>
+</div>
+
+@code {
+    private async Task regresar()
+    {
+        navigationManager.NavigateTo("/persona");
+    }
+}

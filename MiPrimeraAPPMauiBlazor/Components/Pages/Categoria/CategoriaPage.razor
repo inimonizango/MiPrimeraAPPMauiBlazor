@@ -1,0 +1,13 @@
+﻿@page "/categoria"
+
+<h3>Categoria Page</h3>
+<div class="text-center">
+    <button class="btn btn-success" @onclick="nuevo">Nuevo</button>
+</div>
+
+@code {
+    private async Task nuevo()
+    {
+        App.Current.MainPage.DisplayAlert("Alerta", "Esta es una alerta", "Cancelar");
+    }
+}
